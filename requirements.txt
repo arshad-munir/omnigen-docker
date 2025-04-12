@@ -1,0 +1,10 @@
+torch==2.1.1
+transformers
+tokenizers
+diffusers
+accelerate==0.24.1
+gradio==4.44.1  # compatible with huggingface-hub 0.17.3
+huggingface-hub
+spaces==0.17.0
+timm==0.9.2
+peft==0.7.1

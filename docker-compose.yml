@@ -1,0 +1,22 @@
+version: '3.9'
+services:
+  omnigen:
+    build: .
+    container_name: omnigen_container
+    restart: unless-stopped
+    ports:
+      - "7860:7860"  # assuming Gradio default port
+    volumes:
+    - .:/app
+    - ../huggingface_cache:/root/.cache/huggingface
+    # environment:
+    #   - NVIDIA_VISIBLE_DEVICES=all
+    # deploy:
+    #   resources:
+    #     reservations:
+    #       devices:
+    #         - driver: nvidia
+    #           count: all
+    #           capabilities: [gpu]
+    # volumes:
+    #   - .:/app

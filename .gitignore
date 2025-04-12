@@ -1,0 +1,13 @@
+# Ignore the cloned repo
+omnigen/
+
+# Optional: Ignore model cache
+../huggingface_cache/
+
+# Ignore Python cache
+__pycache__/
+*.pyc
+
+# Ignore environment files if any
+.env
+venv/
