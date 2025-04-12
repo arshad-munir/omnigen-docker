@@ -14,13 +14,13 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 
 # Create app directory
 WORKDIR /app
-
 # Copy requirement file
 COPY requirements.txt /app/
 
 # Install Python packages
-RUN pip install --upgrade pip && \
-    pip install --no-cache-dir -r requirements.txt
+RUN pip install --upgrade pip
+# RUN pip install numpy
+RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy source code
 COPY . /app

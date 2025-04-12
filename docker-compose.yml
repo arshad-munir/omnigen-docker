@@ -9,6 +9,7 @@ services:
     volumes:
     - .:/app
     - ../huggingface_cache:/root/.cache/huggingface
+    mem_limit: 16g
     # environment:
     #   - NVIDIA_VISIBLE_DEVICES=all
     # deploy:
